@@ -2,9 +2,16 @@
 using namespace std;
 int main() {
     int a[4]={3,4,7,2};
+    cout<<" Elements of the array are : "<<endl;;
+    for(int i=0;i<4;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    cout<<"\n";
     int key;
+    cout<<"Enter the element ";
     cin>>key;
-    for(int i=0;i<5;i++)
+    for(int i=0;i<4;i++)
     {
         if(a[i]==key)
         {
@@ -16,7 +23,8 @@ int main() {
             }
         }
     }
-    for(int i=0;i<4-1;i++)
+    cout<<"After Deletion:- "<<endl;
+    for(int i=0;i<3;i++)
     {
         cout<<a[i]<<" ";
     }
